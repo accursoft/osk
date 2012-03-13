@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>On-Screen Keyboard Demo</title>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="jquery.caret.js"></script>
+<script type="text/javascript" src="jquery.osk.js"></script>
+
+<script type="text/javascript">
+function callback(key) {
+        var box = $('#text');
+        var text = box.val();
+        var pos = box.caret();
+        switch (key) {
+            case '\b':
+                box.val(text.substring(0, pos-1) + text.substring(pos));
+                box.caret(pos-1);
+                break;
+            case '\003':
+                box.caret(pos-1);
+                break;
+            case '\004':
+                box.caret(pos+1);
+                break;
+            default:
+                box.val(text.substring(0, pos) + key + text.substring(pos));
+                box.caret(pos+1);
+        }
+}
+
+$(function() {
+    $('#basic').click(function() {$('#osk').loadLayout('layouts/us-basic.json', callback)});
+    $('#international').click(function() {$('#osk').loadLayout('layouts/us-international.json', callback)});
+});
+</script>
+<style type="text/css">
+#osk div {
+ text-align: center;
+}
+
+#osk button {
+ height: 3em;
+ min-width: 2.5em;
+ font-size: xx-large;
+}
+
+#key_spacebar {
+  width: 15em;
+}
+
+#osk.shift #key_leftshift,
+#osk.shift #key_rightshift,
+#osk.altGr #key_altgr,
+#osk.capsLock #key_capslock {
+  background-color: #fd9;
+}
+</style>
+</head>
+<body>
+<button id="basic">US Basic</button>
+<button id="international">US International</button>
+<p><textarea rows="5" cols="20" id="text"></textarea></p>
+<div id="osk"></div>
+</body>
+</html>
