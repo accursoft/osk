@@ -141,11 +141,11 @@ var handlers = {
   },
 
   left: function(keyboard) {
-    keyboard.callback('\003');
+    keyboard.callback('\3');
   },
 
   right: function(keyboard) {
-    keyboard.callback('\004');
+    keyboard.callback('\4');
   },
 
   enter: function(keyboard) {

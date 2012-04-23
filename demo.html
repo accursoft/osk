@@ -16,10 +16,10 @@ function callback(key) {
                 box.val(text.substring(0, pos-1) + text.substring(pos));
                 box.caret(pos-1);
                 break;
-            case '\003':
+            case '\3':
                 box.caret(pos-1);
                 break;
-            case '\004':
+            case '\4':
                 box.caret(pos+1);
                 break;
             default:
