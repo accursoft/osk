@@ -76,12 +76,12 @@ function Key(keyObj) {
   this.altIsLetter = this.altLabel.toUpperCase() != this.altLabel.toLowerCase();
 }
 
-//generate the HTML for a key
+//generate an HTML button for a key
 Key.prototype.draw = function(keyboard) {
-  var key = this.key = $("<button id='" + this.id + "'>" + this.label + "</button>");
+  var button = this.button = $("<button id='" + this.id + "'>" + this.label + "</button>");
   //wire click event to the keypress handler
-  this.key.click(function() {keyboard.keyIDs[this.id].activate(keyboard, key)});
-  return this.key;
+  this.button.click(function() {keyboard.keyIDs[this.id].activate(keyboard, button)});
+  return this.button;
 };
 
 //apply modifiers to the key's label
@@ -115,15 +115,15 @@ Key.prototype.modify = function(modifiers) {
     text = this.isLetter ? this.altLabel : text = this.sAltLabel;
     break;
   }
-  this.key.text(text);
+  this.button.text(text);
 };
 
 //handle the keypress event
-Key.prototype.activate = function(keyboard, key) {
+Key.prototype.activate = function(keyboard, button) {
   if (keyboard.modifiers.shift)
-    handlers[this.sFunc](keyboard, key);
+    handlers[this.sFunc](keyboard, button);
   else
-    handlers[this.func](keyboard, key);
+    handlers[this.func](keyboard, button);
 };
 
 //handle keypresses
@@ -173,8 +173,8 @@ var handlers = {
     return keyboard.modifiers.capsLock;
   },
 
-  typelabel: function(keyboard, key) {
-    keyboard.callback(key.text());
+  typelabel: function(keyboard, button) {
+    keyboard.callback(button.text());
     if (keyboard.modifiers.shift)
       this.shift(keyboard);
     if (keyboard.modifiers.altGr)
