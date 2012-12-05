@@ -13,7 +13,7 @@
   {"id": "key_0", "label": "0", "sLabel": ")"},
   {"id": "key_minus", "label": "-", "sLabel": "_"},
   {"id": "key_equals", "label": "=", "sLabel": "+"},
-  {"id": "key_backspace", "label": "←", "sLabel": "←", "func": "backspace", "sFunc": "backspace"}
+  {"id": "key_backspace", "label": "\u21E6", "sLabel": "\u21E6", "func": "backspace", "sFunc": "backspace"}
  ],
  [
   {"id": "key_tab", "label": "Tab", "sLabel": "Tab", "func": "tab", "sFunc": "tab"},

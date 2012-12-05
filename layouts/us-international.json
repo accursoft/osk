@@ -16,6 +16,7 @@
   {"id": "key_backspace", "label": "\u21E6", "sLabel": "\u21E6", "func": "backspace", "sFunc": "backspace", "altFunc": "backspace", "sAltFunc": "backspace"}
  ],
  [
+  {"id": "key_tab", "label": "Tab", "sLabel": "Tab", "func": "tab", "sFunc": "tab"},
   {"id": "key_q", "label": "q", "altLabel": "ä"},
   {"id": "key_w", "label": "w", "altLabel": "å"},
   {"id": "key_e", "label": "e", "altLabel": "é"},
@@ -60,8 +61,9 @@
   {"id": "key_rightshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"}
  ],
  [
+  {"id": "key_altgr", "label": "AltGr", "sLabel": "AltGr", "func": "altgr", "sFunc": "altgr", "altFunc": "altgr", "sAltFunc": "altgr"},
+  {"id": "key_left", "label": "←", "sLabel": "←", "func": "left", "sFunc": "left"},
   {"id": "key_spacebar", "label": "Space", "sLabel": "Space", "func": "space", "sFunc": "space", "altFunc": "space", "sAltFunc": "space"},
-  {"id": "key_altgr", "label": "AltGr", "sLabel": "AltGr", "func": "altgr", "sFunc": "altgr", "altFunc": "altgr", "sAltFunc": "altgr"}
+  {"id": "key_right", "label": "→", "sLabel": "→", "func": "right", "sFunc": "right"}
  ]
 ]
-
