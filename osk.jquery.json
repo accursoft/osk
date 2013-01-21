@@ -1,0 +1,21 @@
+{
+    "name": "osk",
+    "version": "1.1.0",
+    "title": "On-Screen Keyboard",
+    "author": {
+        "name": "Gideon Sireling",
+        "url": "http://code.accursoft.com/"
+    },
+    "licenses": [
+        {
+            "type": "GPLv3",
+            "url": "http://code.accursoft.com/osk/raw/tip/license.txt"
+        }
+    ],
+    "dependencies": {"jquery": ">=1.3", "caret": "*"},
+    "description": "Provides multilingual on-screen keyboards for environments such as touch-screen terminals, where a hardware keyboard may not be available.",
+    "keywords": ["ui"],
+    "homepage": "http://code.accursoft.com/osk",
+    "docs": "http://code.accursoft.com/osk/src/tip/readme.md",
+    "bugs": "http://code.accursoft.com/osk/issues"
+}
