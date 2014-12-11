@@ -1,0 +1,20 @@
+{
+  "name": "osk",
+  "description": "Provides multilingual on-screen keyboards for environments such as touch-screen terminals, where a hardware keyboard may not be available.",
+  "main": "osk.caret.js",
+  "license": ["GPL-3.0+"],
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "demo.html"
+  ],
+  "keywords": ["keyboard"],
+  "authors": [{
+    "name": "Gideon Sireling",
+    "homepage": "http://www.accursoft.com/gideon-sireling.html"
+  }],
+  "homepage": "http://code.accursoft.com/osk",
+  "dependencies": {
+    "jquery": ">=1.3"
+  }
+}
