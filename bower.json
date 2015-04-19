@@ -13,7 +13,7 @@
     "name": "Gideon Sireling",
     "homepage": "http://www.accursoft.com/gideon-sireling.html"
   }],
-  "homepage": "http://code.accursoft.com/osk",
+  "homepage": "https://bitbucket.org/accursoft/osk",
   "dependencies": {
     "jquery": ">=1.3",
     "caret": ""
