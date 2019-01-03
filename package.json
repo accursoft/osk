@@ -1,0 +1,18 @@
+{
+  "name": "@accursoft/jquery-osk",
+  "version": "1.2.0",
+  "description": "Provides multilingual on-screen keyboards for environments such as touch-screen terminals, where a hardware keyboard may not be available",
+  "browser": "jquery.osk.js",
+  "author": {
+    "name": "Gideon Sireling",
+    "url": "https://www.linkedin.com/in/gideonsireling"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "hg",
+    "url": "https://bitbucket.org/accursoft/osk"
+  },
+  "files": [
+    "jquery.osk.js"
+  ]
+}
