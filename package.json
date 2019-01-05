@@ -1,6 +1,6 @@
 {
   "name": "@accursoft/jquery-osk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Provides multilingual on-screen keyboards for environments such as touch-screen terminals, where a hardware keyboard may not be available",
   "browser": "jquery.osk.js",
   "author": {
@@ -14,5 +14,9 @@
   },
   "files": [
     "jquery.osk.js"
+  ],
+  "keywords": [
+    "jquery-plugin",
+    "keyboard"
   ]
 }
